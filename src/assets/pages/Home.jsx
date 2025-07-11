@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { searchMovies } from '../../api/omdb';
 import MovieCard from '../../Components/MovieCard';
 import Pagination from '../../Components/Pagination';
-import SearchBar from '../../Components/searchbar';
+import SearchBar from '../../Components/Searchbar';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');

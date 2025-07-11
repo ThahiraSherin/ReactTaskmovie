@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌐 Global Styling */
+body {
+  background: grey;
+  color: darkslategrey;
+  font-family: sans-serif;
+  overflow-x: hidden;
+
+}
+
+.home {
+  padding: 1rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.movie {
+  min-height: 100vh;
+  padding: 1rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.moviecard {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive grid for small screens (≥ 640px) */
+@media (min-width: 640px) {
+  .moviecard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Responsive grid for medium screens (≥ 768px) */
+@media (min-width: 768px) {
+  .moviecard {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.form {
+  display: flex;
+  gap: 0.5rem;           /* 8px spacing between items */
+  margin-bottom: 1rem;   /* 16px bottom margin */
+}
+
+.search {
+  border: 1px solid #d1d5db; /* Tailwind's border (gray-300) */
+  padding: 0.5rem 1rem;       /* py-2 px-4 */
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.movie-details {
+  padding: 1rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.poster {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.movie-details p {
+  color: #000; /* black */
+}
+
+
+h1, h2 {
+    color: black;
+}
+
+.card {
+  background-color: white;         
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.5rem;           
+  overflow: hidden;               
+  padding: 1rem;               
+  display: flex;               
+  flex-direction: column;      
+  justify-content: space-between;
+  height: 100%;                  
+}
+
+.image {
+  width: 100%;                
+  height: 15rem;              
+  object-fit: cover;          
+  border-radius: 0.25rem;     
+  margin-bottom: 1rem;        
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+.image-title {
+  color: #4B5563;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  color: #2563EB;                
+  text-decoration: underline;     
+  font-size: 0.875rem;            
+  margin-top: auto;               
+}
